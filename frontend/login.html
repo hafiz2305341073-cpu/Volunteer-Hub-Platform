@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | Volunteer Hub</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <div class="brand">Volunteer Hub</div>
+      <div id="navLinks" class="nav-links"></div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div style="max-width: 500px; margin: 3rem auto;">
+      <h1 class="page-title" style="text-align: center; margin-top: 0;">Welcome Back</h1>
+      <p style="text-align: center; color: var(--muted); margin-bottom: 2rem;">Sign in to your Volunteer Hub account</p>
+
+      <div class="form-wrap">
+        <form id="login-form">
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input id="email" type="email" placeholder="you@example.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input id="password" type="password" placeholder="Your password" required>
+          </div>
+
+          <button class="btn btn-primary btn-block" type="submit" style="padding: 0.85rem;">Sign In</button>
+
+          <div style="text-align: center; margin-top: 1.5rem; border-top: 1px solid #e2e8f0; padding-top: 1rem;">
+            <p style="margin: 0.5rem 0; color: var(--muted);">Don't have an account? <a href="register.html" style="color: var(--primary); font-weight: 600;">Create one</a></p>
+          </div>
+
+          <div id="message" class="note" style="margin-top: 1rem; text-align: center;"></div>
+        </form>
+
+        <div class="alert alert-info" style="margin-top: 2rem;">
+          <strong>Demo Accounts:</strong>
+          <p style="margin: 0.5rem 0;">Volunteer: vol@vh.com / 123456</p>
+          <p style="margin: 0.5rem 0;">NGO: ngo@vh.com / 123456</p>
+          <p style="margin: 0.5rem 0;">Admin: admin@vh.com / 123456</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-space"></div>
+  </div>
+
+  <script src="js/common.js"></script>
+  <script src="js/login.js"></script>
+</body>
+</html>
